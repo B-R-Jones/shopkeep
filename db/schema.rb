@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_15_030601) do
+ActiveRecord::Schema.define(version: 2019_08_16_162618) do
 
   create_table "armors", force: :cascade do |t|
     t.string "base_armor"
@@ -19,11 +19,12 @@ ActiveRecord::Schema.define(version: 2019_08_15_030601) do
     t.integer "shield_bonus"
     t.integer "max_dex_bonus"
     t.integer "armor_check_penalty"
-    t.integer "speed"
+    t.string "speed"
     t.integer "weight"
     t.string "special"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "arcane_spell_failure"
   end
 
   create_table "weapons", force: :cascade do |t|
