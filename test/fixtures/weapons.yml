@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  base_weapon: MyString
+  category: MyString
+  dmg_s: 1
+  dmg_m: 1
+  critical: 1
+  critical_range: MyString
+  range: 1
+  weight: 1
+  type: 
+  special: MyString
+
+two:
+  base_weapon: MyString
+  category: MyString
+  dmg_s: 1
+  dmg_m: 1
+  critical: 1
+  critical_range: MyString
+  range: 1
+  weight: 1
+  type: 
+  special: MyString
