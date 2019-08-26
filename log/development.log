@@ -2317,3 +2317,195 @@ Processing by ArmorsController#show as HTML
 Completed 200 OK in 50ms (Views: 44.3ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 172.17.0.1 at 2019-08-26 12:13:33 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/dev/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dev/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dev/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 24ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static_pages/home" for 172.17.0.1 at 2019-08-26 18:25:43 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/dev/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 267ms (Views: 258.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/armors" for 172.17.0.1 at 2019-08-26 18:25:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArmorsController#index as HTML
+  Rendering armors/index.html.erb within layouts/application
+  [1m[36mArmor Load (0.4ms)[0m  [1m[34mSELECT "armors".* FROM "armors"[0m
+  ↳ app/views/armors/index.html.erb:13
+  Rendered armors/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 60ms (Views: 52.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 172.17.0.1 at 2019-08-26 18:26:04 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 73ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/armors" for 172.17.0.1 at 2019-08-26 18:26:07 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArmorsController#index as HTML
+  Rendering armors/index.html.erb within layouts/application
+  [1m[36mArmor Load (0.4ms)[0m  [1m[34mSELECT "armors".* FROM "armors"[0m
+  ↳ app/views/armors/index.html.erb:13
+  Rendered armors/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/armors/1" for 172.17.0.1 at 2019-08-26 18:27:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArmorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArmor Load (0.2ms)[0m  [1m[34mSELECT  "armors".* FROM "armors" WHERE "armors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/armors_controller.rb:67
+  Rendering armors/show.html.erb within layouts/application
+  Rendered armors/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 31ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/armors" for 172.17.0.1 at 2019-08-26 18:27:50 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArmorsController#index as HTML
+  Rendering armors/index.html.erb within layouts/application
+  [1m[36mArmor Load (0.3ms)[0m  [1m[34mSELECT "armors".* FROM "armors"[0m
+  ↳ app/views/armors/index.html.erb:13
+  Rendered armors/index.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/armors/1" for 172.17.0.1 at 2019-08-26 18:27:54 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArmorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArmor Load (0.2ms)[0m  [1m[34mSELECT  "armors".* FROM "armors" WHERE "armors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/armors_controller.rb:67
+  Rendering armors/show.html.erb within layouts/application
+  Rendered armors/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/armors" for 172.17.0.1 at 2019-08-26 18:27:56 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArmorsController#index as HTML
+  Rendering armors/index.html.erb within layouts/application
+  [1m[36mArmor Load (0.8ms)[0m  [1m[34mSELECT "armors".* FROM "armors"[0m
+  ↳ app/views/armors/index.html.erb:13
+  Rendered armors/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/armors/1" for 172.17.0.1 at 2019-08-26 18:46:36 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArmorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArmor Load (0.1ms)[0m  [1m[34mSELECT  "armors".* FROM "armors" WHERE "armors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/armors_controller.rb:67
+  Rendering armors/show.html.erb within layouts/application
+  Rendered armors/show.html.erb within layouts/application (38.4ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `armor_check_Penalty' for #<Armor:0x00007fd015f4c698>
+Did you mean?  armor_check_penalty?
+               armor_check_penalty=
+               armor_check_penalty_was):
+     8:   </tr>
+     9: 	<tr>
+    10:     <td>Max Dex: <%= @armor.max_dex_bonus =%></td>
+    11:     <td>Ac Penalty: <%= @armor.armor_check_Penalty =%></td>
+    12:   </tr>
+    13:   <tr>
+    14:     <td>Speed: <%= @armor.speed =%></td>
+  
+app/views/armors/show.html.erb:11:in `_app_views_armors_show_html_erb___858836591795308190_70265849182620'
+Started GET "/armors/1" for 172.17.0.1 at 2019-08-26 18:46:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArmorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArmor Load (0.1ms)[0m  [1m[34mSELECT  "armors".* FROM "armors" WHERE "armors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/armors_controller.rb:67
+  Rendering armors/show.html.erb within layouts/application
+  Rendered armors/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/armors/1" for 172.17.0.1 at 2019-08-26 19:02:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArmorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArmor Load (0.1ms)[0m  [1m[34mSELECT  "armors".* FROM "armors" WHERE "armors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/armors_controller.rb:67
+  Rendering armors/show.html.erb within layouts/application
+  Rendered armors/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/armors/1" for 172.17.0.1 at 2019-08-26 19:02:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArmorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArmor Load (0.2ms)[0m  [1m[34mSELECT  "armors".* FROM "armors" WHERE "armors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/armors_controller.rb:67
+  Rendering armors/show.html.erb within layouts/application
+  Rendered armors/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/armors/1" for 172.17.0.1 at 2019-08-26 19:02:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArmorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArmor Load (0.1ms)[0m  [1m[34mSELECT  "armors".* FROM "armors" WHERE "armors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/armors_controller.rb:67
+  Rendering armors/show.html.erb within layouts/application
+  Rendered armors/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/armors/1" for 172.17.0.1 at 2019-08-26 19:03:17 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArmorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArmor Load (0.1ms)[0m  [1m[34mSELECT  "armors".* FROM "armors" WHERE "armors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/armors_controller.rb:67
+  Rendering armors/show.html.erb within layouts/application
+  Rendered armors/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/armors/1" for 172.17.0.1 at 2019-08-26 19:29:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArmorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArmor Load (0.1ms)[0m  [1m[34mSELECT  "armors".* FROM "armors" WHERE "armors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/armors_controller.rb:67
+  Rendering armors/show.html.erb within layouts/application
+  Rendered armors/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/armors/1" for 172.17.0.1 at 2019-08-26 19:29:14 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArmorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArmor Load (0.1ms)[0m  [1m[34mSELECT  "armors".* FROM "armors" WHERE "armors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/armors_controller.rb:67
+  Rendering armors/show.html.erb within layouts/application
+  Rendered armors/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 31ms (Views: 28.2ms | ActiveRecord: 0.1ms)
+
+
