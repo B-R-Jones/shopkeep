@@ -1,4 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+<tr><%= @armor.base_armor =%></tr>
+<tr><%= @armor.category =%></tr>
+<td>
+	<tr><%= @armor.ac_bonus =%></tr>
+	<tr> Shield Bonus:<%= @armor.shield_bonus =%></tr>
+	<tr><%= @armor.max_dex_bonus =%></tr>
+</td>
 <%= link_to 'Edit', edit_armor_path(@armor) %> |
 <%= link_to 'Back', armors_path %>
