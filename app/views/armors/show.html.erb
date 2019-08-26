@@ -1,4 +1,22 @@
 <p id="notice"><%= notice %></p>
-
-<%= link_to 'Edit', edit_armor_path(@armor) %> |
-<%= link_to 'Back', armors_path %>
+<div>
+  <%= @armor.base_armor =%>
+  <div class="subtitle">Category: <%= @armor.category =%></div>
+</div>
+<table>
+  <tr>
+	 <td>AC Bonus: <%= @armor.ac_bonus =%></td>
+	 <td>Shield Bonus:<%= @armor.shield_bonus =%></td>
+  </tr>
+	<tr>
+    <td>Max Dex: <%= @armor.max_dex_bonus =%></td>
+    <td>Ac Penalty: <%= @armor.armor_check_penalty =%></td>
+  </tr>
+  <tr>
+    <td>Speed: <%= @armor.speed =%></td>
+    <td>Weight: <%= @armor.weight =%></td>
+  </tr>
+  <tr>Special: <%= @armor.special =%></tr>
+  <%= link_to 'Edit', edit_armor_path(@armor) %> |
+  <%= link_to 'Back', armors_path %>
+</table>
