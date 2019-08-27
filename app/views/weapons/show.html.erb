@@ -1,4 +1,20 @@
 <p id="notice"><%= notice %></p>
-
-<%= link_to 'Edit', edit_weapon_path(@weapon) %> |
-<%= link_to 'Back', weapons_path %>
+<div>
+  <div>
+    <%= @weapon.base_weapon =%>
+    <div><%= @weapon.category =%> <%= @weapon.style =%> (Hands: <%= @weapon.hands =%>)</div>
+  </div>
+  <div>
+    <div>Damage: <%= @weapon.dmg_m =%>(<%= @weapon.dmg_s =%>) <%= @weapon.damage_type =%></div>
+    <div>Critical: x<%= @weapon.critical =%> (<%= @weapon.critical_range =%>)</div>
+  </div>
+  <div>
+    <div>Range: <%= @weapon.range =%></div>
+    <div>Weight: <%= @weapon.range =%></div>
+    <div>Special: <%= @weapon.special =%></div>
+  </div>
+  <div>
+    <%= link_to 'Edit', edit_weapon_path(@weapon) %> |
+    <%= link_to 'Back', weapons_path %>
+  </div>
+</div>
