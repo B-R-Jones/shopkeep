@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_27_141121) do
+ActiveRecord::Schema.define(version: 2019_08_27_173005) do
 
   create_table "armors", force: :cascade do |t|
     t.string "base_armor", null: false
@@ -46,6 +46,10 @@ ActiveRecord::Schema.define(version: 2019_08_27_141121) do
     t.integer "hands", default: 1, null: false
     t.string "style", null: false
     t.string "damage_type", null: false
+    t.integer "price_p", default: 0, null: false
+    t.integer "price_g", default: 0, null: false
+    t.integer "price_s", default: 0, null: false
+    t.integer "price_c", default: 0, null: false
   end
 
 end
