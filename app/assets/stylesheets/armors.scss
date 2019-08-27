@@ -2,13 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.window {
-
+.primaryContainer {
+  margin-top: 20px;
+  width: 700px;
+  height: 450px;
 }
-.armor {
 
+.armorHeading {
+  border-bottom: solid 10px black;
 }
 
-.category {
-  text-align: center;
+.statBox {
+  width: 250px;
 }
