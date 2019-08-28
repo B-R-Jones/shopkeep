@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_27_173005) do
+ActiveRecord::Schema.define(version: 2019_08_27_225518) do
 
   create_table "armors", force: :cascade do |t|
     t.string "base_armor", null: false
@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(version: 2019_08_27_173005) do
   create_table "weapons", force: :cascade do |t|
     t.string "base_weapon", null: false
     t.string "category", null: false
-    t.integer "dmg_s", null: false
-    t.integer "dmg_m", null: false
+    t.string "dmg_s", null: false
+    t.string "dmg_m", null: false
     t.integer "critical", default: 0, null: false
     t.string "critical_range", null: false
     t.integer "range", default: 5, null: false
