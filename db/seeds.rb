@@ -247,3 +247,11 @@ Armor.create(base_armor: 'Shield, tower', category: 'Shield', shield_bonus: 3, m
 						 arcane_spell_failure: 50,  weight: 45, special: 'Cover')
 puts "Created All Armor (Shields)!"
 puts "Created All Armor Successfully!"
+
+puts "Creating Example Players..."
+User.create(player_name: 'Brett', character_name: 'Alabaster')
+puts "Created Example Players Successfully!"
+
+puts "Creating Wallets..."
+Money.create(platinum: 20, gold: 30, silver: 10, copper: 5, character: 'Alabaster')
+puts "Created Wallets Successfully!"

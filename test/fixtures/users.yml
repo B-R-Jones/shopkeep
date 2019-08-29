@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_name: 
+  char_name: 
+  platinum: 
+  gold: 
+  silver: 
+  copper: 1
+
+two:
+  player_name: 
+  char_name: 
+  platinum: 
+  gold: 
+  silver: 
+  copper: 1

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :weapons
   resources :armors
+  resources :users
 
   get 'static_pages/home'
   root 'static_pages#home'

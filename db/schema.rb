@@ -10,46 +10,69 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_27_225518) do
+ActiveRecord::Schema.define(version: 2019_08_29_154851) do
 
   create_table "armors", force: :cascade do |t|
-    t.string "base_armor", null: false
-    t.string "category", null: false
-    t.integer "ac_bonus", default: 0, null: false
-    t.integer "shield_bonus", default: 0, null: false
-    t.integer "max_dex_bonus", default: 0, null: false
-    t.integer "armor_check_penalty", default: 0, null: false
-    t.string "speed", default: "0", null: false
-    t.integer "weight", default: 0, null: false
+    t.string "base_armor"
+    t.string "category"
+    t.integer "ac_bonus"
+    t.integer "shield_bonus"
+    t.integer "max_dex_bonus"
+    t.integer "armor_check_penalty"
+    t.string "speed"
+    t.integer "weight"
     t.string "special"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "arcane_spell_failure", default: 0, null: false
-    t.integer "price_p", default: 0, null: false
-    t.integer "price_g", default: 0, null: false
-    t.integer "price_s", default: 0, null: false
-    t.integer "price_c", default: 0, null: false
+    t.integer "arcane_spell_failure"
+    t.integer "price_p"
+    t.integer "price_g"
+    t.integer "price_s"
+    t.integer "price_c"
+  end
+
+  create_table "inventories", force: :cascade do |t|
+    t.boolean "money"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "money", force: :cascade do |t|
+    t.integer "platinum"
+    t.integer "gold"
+    t.integer "silver"
+    t.integer "copper"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "character"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "player_name"
+    t.string "character_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "weapons", force: :cascade do |t|
-    t.string "base_weapon", null: false
-    t.string "category", null: false
-    t.string "dmg_s", null: false
-    t.string "dmg_m", null: false
-    t.integer "critical", default: 0, null: false
-    t.string "critical_range", null: false
-    t.integer "range", default: 5, null: false
-    t.integer "weight", default: 0, null: false
+    t.string "base_weapon"
+    t.string "category"
+    t.string "dmg_s"
+    t.string "dmg_m"
+    t.integer "critical"
+    t.string "critical_range"
+    t.integer "range"
+    t.integer "weight"
     t.string "special"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "hands", default: 1, null: false
-    t.string "style", null: false
-    t.string "damage_type", null: false
-    t.integer "price_p", default: 0, null: false
-    t.integer "price_g", default: 0, null: false
-    t.integer "price_s", default: 0, null: false
-    t.integer "price_c", default: 0, null: false
+    t.integer "hands"
+    t.string "style"
+    t.string "damage_type"
+    t.integer "price_p"
+    t.integer "price_g"
+    t.integer "price_s"
+    t.integer "price_c"
   end
 
 end
