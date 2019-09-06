@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_05_163158) do
+ActiveRecord::Schema.define(version: 2019_09_06_140823) do
 
   create_table "armors", force: :cascade do |t|
     t.string "base_armor"
@@ -29,9 +29,9 @@ ActiveRecord::Schema.define(version: 2019_09_05_163158) do
     t.integer "price_g"
     t.integer "price_s"
     t.integer "price_c"
-    t.integer "cost_amount"
-    t.string "cost_currency"
     t.integer "quantity"
+    t.string "owner"
+    t.string "unique_name"
   end
 
   create_table "inventories", force: :cascade do |t|
@@ -77,9 +77,10 @@ ActiveRecord::Schema.define(version: 2019_09_05_163158) do
     t.integer "price_g"
     t.integer "price_s"
     t.integer "price_c"
-    t.integer "cost_amount"
-    t.string "cost_currency"
     t.integer "quantity"
+    t.string "owner"
+    t.string "unique_name"
+    t.integer "user_id"
   end
 
 end

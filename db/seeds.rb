@@ -7,6 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Weapon seeding below
+# Custom
+# - Alabaster
+Weapon.create(base_weapon: 'Sword, short', style: 'Martial', category: 'Light', hands: 1, dmg_s: '1d4', dmg_m: '1d6', critical: 2,
+							critical_range: '19-20', range: 5, weight: 2, damage_type: 'P', special: 'Surrounds the user with a 10ft diameter bubble
+							of breathable air and allows freedom of movement while in water', price_p: 12, quantity: 1, owner: 'Alabaster',
+							unique_name: 'Aqua Sword', user_id: 1)
 # Simple
 # - Light
 Weapon.create(base_weapon: 'Dagger', style: 'Simple', category: 'Light', hands: 1, dmg_s: '1d3', dmg_m: '1d4', critical: 2,
@@ -253,5 +259,5 @@ User.create(player_name: 'Brett', character_name: 'Alabaster')
 puts "Created Example Players Successfully!"
 
 puts "Creating Wallets..."
-Money.create(platinum: 20, gold: 30, silver: 10, copper: 5, character: 'Alabaster')
+Money.create(platinum: 20, gold: 30, silver: 10, copper: 5, character: 'Alabaster', user_id: 1)
 puts "Created Wallets Successfully!"
