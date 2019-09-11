@@ -13,6 +13,11 @@ Weapon.create(base_weapon: 'Sword, short', style: 'Martial', category: 'Light', 
 							critical_range: '19-20', range: 5, weight: 2, damage_type: 'P', special: 'Surrounds the user with a 10ft diameter bubble
 							of breathable air and allows freedom of movement while in water', price_p: 12, quantity: 1, owner: 'Alabaster',
 							unique_name: 'Aqua Sword', user_id: 1)
+Weapon.create(base_weapon: 'Dagger', style: 'Simple', category: 'Light', hands: 1, dmg_s: '1d3', dmg_m: '1d4', critical: 2,
+							critical_range: '19-20', range: 10, weight: 1, damage_type: 'P/S', price_g: 1, quantity: 1, owner: 'Alabaster',
+							user_id: 1)
+puts "Created All Custom Weapons!"
+
 # Simple
 # - Light
 Weapon.create(base_weapon: 'Dagger', style: 'Simple', category: 'Light', hands: 1, dmg_s: '1d3', dmg_m: '1d4', critical: 2,

@@ -5,14 +5,22 @@ class User < ApplicationRecord
   has_many :armors
 
   def wallet
-    pl = Money.find(self.id).platinum.to_s + 'p'
-    go = Money.find(self.id).gold.to_s + 'g'
-    si = Money.find(self.id).silver.to_s + 's'
-    co = Money.find(self.id).copper.to_s + 'c'
-    "Wallet: #{pl}, #{go}, #{si}, #{co}"
+    wallet = Money.find(self.id)
+    "Wallet: #{wallet.platinum}p, #{wallet.gold}g, #{wallet.silver}s, #{wallet.copper}c"
   end
 
-  def current_weapon
-    "Equipped: " + Weapon.where("owner = ?", self.character_name).first.unique_name
+  def all_weapons
+    all_weapons = Weapon.where("owner = ?", self.character_name)
+    i = all_weapons.length
+    j = 0
+    while j < i do
+        if all_weapons[j].unique_name.nil? then
+          puts "#{j+1}: " + all_weapons[j].base_weapon
+        else
+          puts "#{j+1}: " + all_weapons[j].unique_name + " (" + all_weapons[j].base_weapon + ")"
+        end
+      j = j + 1
+    end
   end
+
 end
