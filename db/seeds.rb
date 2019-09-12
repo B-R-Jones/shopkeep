@@ -6,6 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# Character seeding below
+# - Brett
+Character.create(user: 'Brett', name: 'Alabaster', race: 'Half-Orc', character_class: 'Cleric', level: 7, size: 'Medium', user_id: 1)
+puts "Created Alabaster!"
+puts "Created All Characters Successfully!"
+
 # Weapon seeding below
 # Custom
 # - Alabaster
@@ -16,7 +22,8 @@ Weapon.create(base_weapon: 'Sword, short', style: 'Martial', category: 'Light', 
 Weapon.create(base_weapon: 'Dagger', style: 'Simple', category: 'Light', hands: 1, dmg_s: '1d3', dmg_m: '1d4', critical: 2,
 							critical_range: '19-20', range: 10, weight: 1, damage_type: 'P/S', price_g: 1, quantity: 1, owner: 'Alabaster',
 							user_id: 1)
-puts "Created All Custom Weapons!"
+puts "Created Alabaster Custom Weapons!"
+puts "Created All Custom Weapons Successfully!"
 
 # Simple
 # - Light
@@ -260,7 +267,7 @@ puts "Created All Armor (Shields)!"
 puts "Created All Armor Successfully!"
 
 puts "Creating Example Players..."
-User.create(player_name: 'Brett', character_name: 'Alabaster')
+User.create(player_name: 'Brett')
 puts "Created Example Players Successfully!"
 
 puts "Creating Wallets..."
