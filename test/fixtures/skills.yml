@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  ability: 
+  ability_mod: 
+  ranks: 
+  misc_mod: 1
+
+two:
+  name: 
+  ability: 
+  ability_mod: 
+  ranks: 
+  misc_mod: 1
