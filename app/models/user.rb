@@ -21,6 +21,6 @@ class User < ApplicationRecord
     if @characters.nil?
       self.set_characters
     end
-    @current_character = @characters[0]
+    @current_character = @characters[0] # make changeable
   end
 end

@@ -10,6 +10,8 @@
 # - Brett
 Character.create(user: 'Brett', name: 'Alabaster', race: 'Half-Orc', character_class: 'Cleric', level: 7, size: 'Medium', user_id: 1)
 puts "Created Alabaster!"
+Character.create(user: 'Brett', name: 'TESTCHARACTER', race: 'TESTRACE', character_class: 'TESTCLASS', level: 1, size: 'Medium', user_id: 1)
+puts "Created TESTCHARACTER!"
 puts "Created All Characters Successfully!"
 
 # Weapon seeding below
