@@ -9,6 +9,7 @@
 # Character seeding below
 # - Brett
 Character.create(user: 'Brett', name: 'Alabaster', race: 'Half-Orc', character_class: 'Cleric', level: 7, size: 'Medium', user_id: 1)
+Acrobatic.create(ability: 'dex', ability_mod: 2, ranks: 2, misc_mod: 0, total: 4, character_name: 'Alabaster')
 puts "Created Alabaster!"
 Character.create(user: 'Brett', name: 'TESTCHARACTER', race: 'TESTRACE', character_class: 'TESTCLASS', level: 1, size: 'Medium', user_id: 1)
 puts "Created TESTCHARACTER!"
@@ -20,10 +21,9 @@ puts "Created All Characters Successfully!"
 Weapon.create(base_weapon: 'Sword, short', style: 'Martial', category: 'Light', hands: 1, dmg_s: '1d4', dmg_m: '1d6', critical: 2,
 							critical_range: '19-20', range: 5, weight: 2, damage_type: 'P', special: 'Surrounds the user with a 10ft diameter bubble
 							of breathable air and allows freedom of movement while in water', price_p: 12, quantity: 1, owner: 'Alabaster',
-							unique_name: 'Aqua Sword', user_id: 1)
+							unique_name: 'Aqua Sword')
 Weapon.create(base_weapon: 'Dagger', style: 'Simple', category: 'Light', hands: 1, dmg_s: '1d3', dmg_m: '1d4', critical: 2,
-							critical_range: '19-20', range: 10, weight: 1, damage_type: 'P/S', price_g: 1, quantity: 1, owner: 'Alabaster',
-							user_id: 1)
+							critical_range: '19-20', range: 10, weight: 1, damage_type: 'P/S', price_g: 1, quantity: 1, owner: 'Alabaster')
 puts "Created Alabaster Custom Weapons!"
 puts "Created All Custom Weapons Successfully!"
 

@@ -1,0 +1,2 @@
+class AbilityScore < ApplicationRecord
+end

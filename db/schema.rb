@@ -10,7 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_13_145820) do
+ActiveRecord::Schema.define(version: 2019_09_17_165019) do
+
+  create_table "ability_scores", force: :cascade do |t|
+    t.string "name"
+    t.integer "str"
+    t.integer "str_mod"
+    t.integer "dex"
+    t.integer "dex_mod"
+    t.integer "con"
+    t.integer "con_mod"
+    t.integer "int"
+    t.integer "int_mod"
+    t.integer "wis"
+    t.integer "wis_mod"
+    t.integer "cha"
+    t.integer "cha_mod"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "armors", force: :cascade do |t|
     t.string "base_armor"
@@ -64,15 +82,10 @@ ActiveRecord::Schema.define(version: 2019_09_13_145820) do
   end
 
   create_table "skills", force: :cascade do |t|
-    t.string "name"
-    t.string "ability"
-    t.integer "ability_mod"
-    t.integer "ranks"
-    t.integer "misc_mod"
-    t.integer "class_skill"
-    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "type"
+    t.string "ability"
   end
 
   create_table "users", force: :cascade do |t|
@@ -103,7 +116,6 @@ ActiveRecord::Schema.define(version: 2019_09_13_145820) do
     t.integer "quantity"
     t.string "owner"
     t.string "unique_name"
-    t.integer "user_id"
   end
 
 end
