@@ -1,2 +1,2 @@
-class Acrobatic < ApplicationRecord
+class Acrobatic < Skill
 end

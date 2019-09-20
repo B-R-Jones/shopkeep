@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  misc_mod: 1
+  ranks: 1
+  total: 1
+  character_name: MyString
+
+two:
+  misc_mod: 1
+  ranks: 1
+  total: 1
+  character_name: MyString

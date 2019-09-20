@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_17_165019) do
+ActiveRecord::Schema.define(version: 2019_09_20_154051) do
 
   create_table "ability_scores", force: :cascade do |t|
     t.string "name"
@@ -64,6 +64,15 @@ ActiveRecord::Schema.define(version: 2019_09_17_165019) do
     t.string "character_class"
   end
 
+  create_table "climbs", force: :cascade do |t|
+    t.integer "misc_mod"
+    t.integer "ranks"
+    t.integer "total"
+    t.string "character_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "inventories", force: :cascade do |t|
     t.boolean "money"
     t.datetime "created_at", null: false
@@ -79,13 +88,6 @@ ActiveRecord::Schema.define(version: 2019_09_17_165019) do
     t.datetime "updated_at", null: false
     t.string "character"
     t.integer "user_id"
-  end
-
-  create_table "skills", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "type"
-    t.string "ability"
   end
 
   create_table "users", force: :cascade do |t|
