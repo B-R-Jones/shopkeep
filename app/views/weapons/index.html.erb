@@ -12,7 +12,7 @@
   <tbody>
     <% @weapons.each do |weapon| %>
       <tr>
-        <td><%= weapon.base_weapon =%></td>
+        <td><%= weapon.base_weapon %></td>
         <td><%= link_to 'Show', weapon %></td>
         <td><%= link_to 'Edit', edit_weapon_path(weapon) %></td>
         <td><%= link_to 'Destroy', weapon, method: :delete, data: { confirm: 'Are you sure?' } %></td>

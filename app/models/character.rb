@@ -53,6 +53,6 @@ class Character < ApplicationRecord
   end
 
   def set_armors
-    @armors = Armor.where("owner = ?", self.character_name)
+    @armors = Armor.where("owner = ?", self.name)
   end
 end

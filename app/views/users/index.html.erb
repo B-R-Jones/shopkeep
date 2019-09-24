@@ -6,11 +6,6 @@
   <thead>
     <tr>
       <th>Player name</th>
-      <th>Char name</th>
-      <th>Platinum</th>
-      <th>Gold</th>
-      <th>Silver</th>
-      <th>Copper</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,11 +14,6 @@
     <% @users.each do |user| %>
       <tr>
         <td><%= user.player_name %></td>
-        <td><%= user.char_name %></td>
-        <td><%= user.platinum %></td>
-        <td><%= user.gold %></td>
-        <td><%= user.silver %></td>
-        <td><%= user.copper %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -35,3 +25,4 @@
 <br>
 
 <%= link_to 'New User', new_user_path %>
+<%= link_to 'Back', root_path %>

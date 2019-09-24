@@ -3,31 +3,8 @@
 <p>
   <strong>Player name:</strong>
   <%= @user.player_name %>
-</p>
-
-<p>
-  <strong>Char name:</strong>
-  <%= @user.char_name %>
-</p>
-
-<p>
-  <strong>Platinum:</strong>
-  <%= @user.platinum %>
-</p>
-
-<p>
-  <strong>Gold:</strong>
-  <%= @user.gold %>
-</p>
-
-<p>
-  <strong>Silver:</strong>
-  <%= @user.silver %>
-</p>
-
-<p>
-  <strong>Copper:</strong>
-  <%= @user.copper %>
+  <h4>Characters</h4>
+  <%= list_characters(@user) %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

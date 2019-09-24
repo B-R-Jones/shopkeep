@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_20_154051) do
+ActiveRecord::Schema.define(version: 2019_09_24_130328) do
 
   create_table "ability_scores", force: :cascade do |t|
     t.string "name"
@@ -44,12 +44,12 @@ ActiveRecord::Schema.define(version: 2019_09_20_154051) do
     t.datetime "updated_at", null: false
     t.integer "arcane_spell_failure"
     t.integer "price_p"
-    t.integer "price_g"
     t.integer "price_s"
-    t.integer "price_c"
-    t.integer "quantity"
     t.string "owner"
     t.string "unique_name"
+    t.integer "quantity"
+    t.integer "price_g"
+    t.integer "price_c"
   end
 
   create_table "characters", force: :cascade do |t|
@@ -62,6 +62,15 @@ ActiveRecord::Schema.define(version: 2019_09_20_154051) do
     t.string "size"
     t.integer "user_id"
     t.string "character_class"
+    t.string "alignment"
+    t.string "deity"
+    t.string "homeland"
+    t.string "gender"
+    t.integer "age"
+    t.integer "height"
+    t.integer "weight"
+    t.string "hair"
+    t.string "eyes"
   end
 
   create_table "climbs", force: :cascade do |t|
@@ -114,10 +123,10 @@ ActiveRecord::Schema.define(version: 2019_09_20_154051) do
     t.integer "price_p"
     t.integer "price_g"
     t.integer "price_s"
-    t.integer "price_c"
     t.integer "quantity"
     t.string "owner"
     t.string "unique_name"
+    t.integer "price_c"
   end
 
 end
