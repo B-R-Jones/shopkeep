@@ -4,7 +4,10 @@
   <strong>Player name:</strong>
   <%= @user.player_name %>
   <h4>Characters</h4>
-  <%= list_characters(@user) %>
+  <% find_characters(@user) %>
+  <% @characters.each do |character| %>
+    <%= character.name %>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
