@@ -6,7 +6,7 @@
   <h4>Characters</h4>
   <% find_characters(@user) %>
   <% @characters.each do |character| %>
-    <%= character.name %>
+    <%= link_to character.name, character %>
   <% end %>
 </p>
 
